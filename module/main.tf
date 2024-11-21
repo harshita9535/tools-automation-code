@@ -9,6 +9,7 @@ resource "aws_instance" "instance" {
   }
 }
 
+
 resource "aws_iam_role" "role" {
   name = "${var.tool_name}-role"
 
@@ -31,6 +32,7 @@ resource "aws_iam_role" "role" {
     Name = "${var.tool_name}-role"
   }
 }
+
 
 resource "aws_iam_instance_profile" "instance_profile" {
   name = "${var.tool_name}-role"
